@@ -7,9 +7,9 @@ public class MeetAnAgent {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int passFromUser = scan.nextInt();
+        int passwordFromUser = scan.nextInt();
 
-        if(passFromUser == PASSWORD){
+        if(passwordFromUser == PASSWORD){
             System.out.println("Hello, Agent");
         }
         else{

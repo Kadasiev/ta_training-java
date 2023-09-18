@@ -7,31 +7,31 @@ class CycleSwap {
         if(array.length == 0)
             return;
 
-        int temp;
-        int temp2 = 0;
+        int currentValue;
+        int precedingValue = 0;
 
         for(int i = 0; i < array.length; i++){
-            temp = array[i];
-            array[i] = temp2;
-            temp2 = temp;
+            currentValue = array[i];
+            array[i] = precedingValue;
+            precedingValue = currentValue;
         }
-        array[0] = temp2;
+        array[0] = precedingValue;
     }
 
     static void cycleSwap(int[] array, int shift) {
         if(array.length == 0)
             return;
 
-        int temp;
-        int temp2 = 0;
+        int currentValue;
+        int precedingValue = 0;
 
         for(int j = 0; j < shift; j++){
             for(int i = 0; i < array.length; i++){
-                temp = array[i];
-                array[i] = temp2;
-                temp2 = temp;
+                currentValue = array[i];
+                array[i] = precedingValue;
+                precedingValue = currentValue;
             }
-            array[0] = temp2;
+            array[0] = precedingValue;
         }
     }
 

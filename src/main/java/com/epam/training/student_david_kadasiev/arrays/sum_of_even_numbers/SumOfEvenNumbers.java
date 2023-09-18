@@ -11,9 +11,9 @@ public class SumOfEvenNumbers {
             return 0;
         }
         int sum = 0;
-        for(int i: array){
-            if(i % 2 == 0){
-                sum += i;
+        for(int value: array){
+            if(value % 2 == 0){
+                sum += value;
             }
         }
         return sum;

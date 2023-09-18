@@ -27,9 +27,9 @@ public class CarouselRun {
 
     public boolean isFinished() {
         int max = 0;
-        for(int el: elements){
-            if(el > max){
-                max = el;
+        for(int element: elements){
+            if(element > max){
+                max = element;
             }
         }
         return max == 0;

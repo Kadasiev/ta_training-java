@@ -10,21 +10,13 @@ public class QuadraticEquation {
         double b = scanner.nextDouble();
         double c = scanner.nextDouble();
 
-        double one = -b;
-        double two = Math.pow(b, 2);
-        double three = 4 * a * c;
-        double four = Math.sqrt(two - three);
-        double five = 2 * a;
-        double six = one - four;
-        double seven = six / five;
+        double additionResult = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2*a);
+        double subtractionResult = (-b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2*a);
 
-        double six2 = one + four;
-        double seven2 = six2 / five;
-
-        if(seven != seven2 && !Double.isNaN(seven2)){
-            System.out.println(seven + " " + seven2);
-        }else if(seven == seven2){
-            System.out.println(seven);
+        if(subtractionResult != additionResult && !Double.isNaN(additionResult)){
+            System.out.println(subtractionResult + " " + additionResult);
+        }else if(subtractionResult == additionResult){
+            System.out.println(subtractionResult);
         }else{
             System.out.println("no roots");
         }
