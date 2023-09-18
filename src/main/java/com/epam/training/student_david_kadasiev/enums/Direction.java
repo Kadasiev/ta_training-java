@@ -1,4 +1,4 @@
-package com.epam.training.student_david_kadasiev.enums.compass;
+package com.epam.training.student_david_kadasiev.enums;
 
 public enum Direction {
     N(0), NE(45), E(90), SE(135), S(180), SW(225), W(270), NW(315);

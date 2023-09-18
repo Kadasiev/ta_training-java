@@ -1,4 +1,4 @@
-package com.epam.training.student_david_kadasiev.wrapper_classes.battleship;
+package com.epam.training.student_david_kadasiev.wrapper_classes;
 
 import java.util.List;
 
