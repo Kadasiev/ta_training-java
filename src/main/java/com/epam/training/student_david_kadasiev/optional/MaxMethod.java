@@ -1,4 +1,4 @@
-package com.epam.training.student_david_kadasiev.optional.max;
+package com.epam.training.student_david_kadasiev.optional;
 
 import java.util.OptionalInt;
 
